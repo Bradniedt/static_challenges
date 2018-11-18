@@ -5,10 +5,19 @@ nav {
 
 body {
   width: 90%;
+  font-family: "Arial", sans-serif;
 }
 
 div {
   text-align: left;
+}
+
+a {
+  color: white;
+}
+
+.titles {
+  font-weight: bold;
 }
 
 .container {
@@ -17,13 +26,14 @@ div {
   display: grid;
   grid-template-columns: [first] 25% [second] 25% [third] 25% [fourth] 25% [fifth];
   grid-template-rows: [headerone] 25px [headertwo] 20px [one] 25% [two] 25% [three] 25% [four] 80px [five];
-  grid-column-gap: 30px;
 }
 
 .header1 {
   grid-column: first / fourth;
   grid-row: headerone / headertwo;
   background-color: red;
+  font-weight: bold;
+  color: white;
 }
 
 .header2 {
@@ -31,6 +41,7 @@ div {
   grid-column: fourth / fifth;
   grid-row: headerone / headertwo;
   background-color: red;
+  color: white;
 }
 
 .header3 {
@@ -38,11 +49,11 @@ div {
   grid-row: headertwo / one;
   background-color: grey;
   text-align: right;
+  color: white;
 }
 
 .item1 {
-  margin-left: 30px;
-  margin-top: 20px;
+  margin: 30px;
   grid-column: first / fourth;
   grid-row: one / four;
   border: 1px solid red;
