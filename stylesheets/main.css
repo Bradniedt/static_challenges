@@ -4,7 +4,7 @@ nav {
 }
 
 body {
-  width: 90%;
+  width: 99%;
   font-family: "Arial", sans-serif;
 }
 
@@ -25,38 +25,42 @@ a {
   height: 100%;
   display: grid;
   grid-template-columns: [first] 25% [second] 25% [third] 25% [fourth] 25% [fifth];
-  grid-template-rows: [headerone] 25px [headertwo] 20px [one] 25% [two] 25% [three] 25% [four] 80px [five];
+  grid-template-rows: [headerone] 35px [headertwo] 30px [one] 25% [two] 25% [three] 25% [four] 80px [five];
 }
 
 .header1 {
   grid-column: first / fourth;
   grid-row: headerone / headertwo;
-  background-color: red;
+  background-color: #b20303;
   font-weight: bold;
   color: white;
+  padding: 10px;
 }
 
 .header2 {
   text-align: right;
   grid-column: fourth / fifth;
   grid-row: headerone / headertwo;
-  background-color: red;
+  background-color: #b20303;
   color: white;
+  font-size: 0.75em;
+  padding: 10px;
 }
 
 .header3 {
   grid-column: first / fifth;
   grid-row: headertwo / one;
-  background-color: grey;
+  background-color: #3d3b3b;
   text-align: right;
   color: white;
+  font-size: 0.75em;
+  padding: 10px;
 }
 
 .item1 {
   margin: 30px;
   grid-column: first / fourth;
   grid-row: one / four;
-  border: 1px solid red;
   overflow: auto;
 }
 
@@ -64,35 +68,53 @@ a {
   margin-top: 20px;
   grid-column: fourth / fifth;
   grid-row: one / two;
-  border: 1px solid red;
 }
 
 .item3 {
   margin-top: 20px;
   grid-column: fourth / fifth;
   grid-row: two / three;
-  border: 1px solid red;
 }
 
 .item4 {
   margin-top: 20px;
+  margin-bottom: 20px;
   grid-column: fourth / fifth;
   grid-row: three / four;
-  border: 1px solid red;
 }
 
 .footer {
   margin-top: 20px;
-  background-color: grey;
+  background-color: #3d3b3b;
   grid-column: first / fifth;
   grid-row: four / five;
 }
 
-div>p, div>h3, div>h4 {
+div>p {
   padding: 10px;
+}
+
+div>ul>li {
+  display: inline;
+  padding-left: 10px;
 }
 
 img {
   width: 75%;
   height: 75%;
+}
+
+.item1>img {
+  width: 80%;
+  height: 75%;
+}
+
+.item1>p {
+  width: 70%;
+}
+
+.footer>p {
+  color: white;
+  font-weight: 200;
+  font-size: 0.8em;
 }
